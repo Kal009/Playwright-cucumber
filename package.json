@@ -1,0 +1,39 @@
+{
+  "name": "playwright-jest",
+  "version": "1.0.0",
+  "description": "playwright automation with jest",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --forceExit",
+    "cucumber": "./node_modules/.bin/cucumber-js --parallel 2 --retry 0 -f json:cucumber_report.json",
+    "cucumber:report": "node report.js",
+    "dry:run": "npx cucumber-js --dry-run"
+  },
+  "keywords": [
+    "Playwright",
+    "Jest"
+  ],
+  "author": "Kalpesh",
+  "license": "ISC",
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "fs": "0.0.1-security",
+    "jasmine-allure-reporter": "^1.0.2",
+    "jest": "^27.4.5",
+    "jest-allure": "^0.1.3",
+    "jest-playwright-preset": "^1.7.0",
+    "node-fetch": "^2.0.0",
+    "playwright": "^1.17.1",
+    "supertest": "^6.1.6"
+  },
+  "dependencies": {
+    "@babel/core": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "@cucumber/cucumber": "^8.0.0-rc.1",
+    "allure-cucumberjs": "^2.0.0-beta.14",
+    "babel-jest": "^27.4.5",
+    "chai": "^4.3.4",
+    "cucumber-html-reporter": "^5.5.0",
+    "jest-jasmine2": "^27.4.5"
+  }
+}
