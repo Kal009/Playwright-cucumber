@@ -26,5 +26,5 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm install
-    - run: npm cucumber
-    - run: npm cucumber:report
+    - run: npm run cucumber
+    - run: npm run cucumber:report
