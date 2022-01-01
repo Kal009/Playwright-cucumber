@@ -11,7 +11,7 @@ setDefaultTimeout(30000)
 BeforeAll(async function () {
     const browserName = process.env.BROWSER || 'chromium'
     global.browser = await { chromium, webkit, firefox }[browserName].launch({
-        headless: false,
+        headless: true,
         slowMo: 50,
     })
 })
