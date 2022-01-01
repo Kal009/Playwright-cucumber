@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --forceExit",
-    "cucumber": "./node_modules/.bin/cucumber-js --parallel 2 --retry 0 -f json:cucumber_report.json",
+    "cucumber": "./node_modules/.bin/cucumber-js --parallel 2 --retry 0 --tags=@sanity -f json:cucumber_report.json",
     "cucumber:report": "node report.js",
     "dry:run": "npx cucumber-js --dry-run"
   },
